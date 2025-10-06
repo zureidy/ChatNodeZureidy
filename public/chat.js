@@ -1,4 +1,4 @@
-var socket = io.connect('https://wonderful-grass-03f08481e.2.azurestaticapps.net');
+var socket = io.connect('https://20.9.134.234');
 var audioNotificacion;
 var persona = document.getElementById('persona'),
   appChat = document.getElementById('app-chat'),
