@@ -1,4 +1,4 @@
-var socket = io.connect('http://200.68.0.0/16');
+var socket = io.connect('http://20.9.134.234');
 var audioNotificacion;
 var persona = document.getElementById('persona'),
   appChat = document.getElementById('app-chat'),
