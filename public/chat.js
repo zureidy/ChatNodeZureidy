@@ -1,4 +1,4 @@
-var socket = io.connect('https://20.9.134.234:3000');
+var socket = io.connect('https://20.9.134.234');
 var audioNotificacion;
 var persona = document.getElementById('persona'),
   appChat = document.getElementById('app-chat'),
@@ -36,9 +36,9 @@ socket.on('chat', function (data){
 
 socket.on('typing', function (data){
   if (data.texto) {
-    escribiendoMensaje.innerHTML = '<p><em>' + data.nombre + ' esta escribiendo un mensaje...</em></p>';
+    escribiendoMensaje.innerHTML = '<p><em>' + data.nombre + ' esta escribiendo un mensaje...</em></p';
   } else {
-    escribiendoMensaje.innerHTML = '';
+    escribiendolensaje.innerHTML = '';
   }
 });
 
@@ -54,7 +54,4 @@ function ingresarAlChat() {
       audioNotificacion = new Audio('notificacion.mp3');
     }
   }
-}
-
-// En tu archivo server.js
-server.listen(3000, '0.0.0.0');
+} 
