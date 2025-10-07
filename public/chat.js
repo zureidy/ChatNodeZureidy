@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 var socket = io.connect('https://wonderful-grass-03f08481e.2.azurestaticapps.netgit');
+=======
+var socket = io.connect('https://20.9.134.234:3000');
+>>>>>>> origin/main
 var audioNotificacion;
 var persona = document.getElementById('persona'),
   appChat = document.getElementById('app-chat'),
@@ -54,7 +58,11 @@ function ingresarAlChat() {
       audioNotificacion = new Audio('notificacion.mp3');
     }
   }
+<<<<<<< HEAD
 }
 
 // En tu archivo server.js
 server.listen(3000, '0.0.0.0');
+=======
+} 
+>>>>>>> origin/main
